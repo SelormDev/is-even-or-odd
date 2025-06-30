@@ -26,3 +26,8 @@ console.log(isEvenOrOdd(5)); // "odd"
 - `isEven(num)`: Returns `true` if the number is even, otherwise `false`.
 - `isOdd(num)`: Returns `true` if the number is odd, otherwise `false`.
 - `isEvenOrOdd(num)`: Returns `"even"` if the number is even, `"odd"` if the number is odd.
+
+## Keywords
+
+- JavaScript
+- ES6
