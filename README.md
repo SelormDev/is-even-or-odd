@@ -1,16 +1,22 @@
-# is-even-or-odd
+# 📦 @selormdev/is-even-or-odd
 
-This package provides a simple utility to check if a number is even or odd.
+A tiny, zero-dependency utility to check whether a number is even or odd — because sometimes, that's all you need.
 
-## Installation
+## 🚀 Installation
 
-To install this package, run:
+Install via npm:
 
 ```bash
-npm i @selormdev/is-even-or-odd
+npm install @selormdev/is-even-or-odd
 ```
 
-## Usage
+Or with yarn:
+
+```bash
+yarn add @selormdev/is-even-or-odd
+```
+
+🛠️ Usage
 
 ```javascript
 import { isEven, isOdd, isEvenOrOdd } from '@selormdev/is-even-or-odd';
@@ -21,8 +27,12 @@ console.log(isEvenOrOdd(4)); // "even"
 console.log(isEvenOrOdd(5)); // "odd"
 ```
 
-## Functions
+🔍 API Reference
 
 - `isEven(num)`: Returns `true` if the number is even, otherwise `false`.
 - `isOdd(num)`: Returns `true` if the number is odd, otherwise `false`.
 - `isEvenOrOdd(num)`: Returns `"even"` if the number is even, `"odd"` if the number is odd.
+
+## 📝 License
+
+ISC © SelormDev
