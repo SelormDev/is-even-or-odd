@@ -30,7 +30,12 @@ jobs:
       - name: Update package.json version to match release tag
         run: |
           TAG_VERSION=${GITHUB_REF#refs/tags/v}
-          npm version $TAG_VERSION --no-git-tag-version
+          CURRENT_VERSION=$(node -p "require('./package.json').version")
+          if [ "$TAG_VERSION" != "$CURRENT_VERSION" ]; then
+            npm version $TAG_VERSION --no-git-tag-version
+          else
+            echo "Version already matches tag: $TAG_VERSION"
+          fi
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
