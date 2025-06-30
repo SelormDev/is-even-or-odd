@@ -1,6 +1,6 @@
 {
   "name": "@selormdev/is-even-or-odd",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Creating my first npm package",
   "license": "ISC",
   "author": "SelormDev",
